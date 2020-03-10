@@ -1,0 +1,65 @@
+<link
+  href="https://fonts.googleapis.com/css?family=Lato:400,600,900&display=swap"
+  rel="stylesheet"
+/>
+<ion-header>
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding text-center id="page-resorts">
+  <div class="mobile-content" *ngIf="viewPlatform === 'mobile'">
+    <div class="shapes-container-vivid">
+      <div class="shape shape-one"></div>
+      <div class="shape shape-two"></div>
+    </div>
+    <div class="resorts-top-content">
+      <h4 (click)="showFeedback()">Hi, {{username}}</h4>
+      <p>Pick a resort</p>
+    </div>
+    <ion-slides spaceBetween="-80" (ionSlideDidChange)="slideChanged()">
+      <ion-slide *ngFor="let slide of slidesData" (click)="getSlideDetails()">
+        <div class="slide-content">
+          <img src="{{slide.img}}" />
+        </div>
+      </ion-slide>
+    </ion-slides>
+    <div class="slide-text-content" (click)="getSlideDetails()">
+      <div class="content-wrapper">
+        <span>{{activeSlide.heading}}</span>
+        <h1>{{activeSlide.subHeading}}</h1>
+        <p>
+          {{activeSlide.description}}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="shapes-container-vivid">
+    <div class="shape shape-one"></div>
+    <div class="shape shape-two"></div>
+  </div>
+  <div class="web-content" *ngIf="viewPlatform === 'web'">
+    <div class="resorts-top-content">
+      <h4>Discover</h4>
+      <p>Let's get into the unexplored world</p>
+    </div>
+    <ion-list>
+      <ion-card
+        *ngFor="let slide of slidesData; let i = index"
+        (click)="getSlideDetailsWeb(i)"
+      >
+        <div class="slide-content">
+          <img src="{{slide.img}}" />
+        </div>
+        <ion-card-header>
+          <span>{{slide.subHeading}}</span>
+          <h4>{{slide.heading}}</h4>
+        </ion-card-header>
+        <ion-card-content>
+          {{slide.description}}
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+  </div>
+</ion-content>

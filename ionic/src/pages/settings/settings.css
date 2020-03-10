@@ -1,0 +1,18 @@
+#page-settings {
+  --theme-primary-color: #ffffff;
+  background: var(--theme-primary-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#page-settings .toolbar-background {
+  background: rgb(9,9,121) !important;
+  background: linear-gradient(10deg, rgba(9,9,121,1) 1%, rgba(0,212,255,1) 100%) !important;
+}
+
+#page-settings .toolbar-title{
+  color: #ffffff !important;
+  font-family: 'Nunito Sans' !important;
+  font-weight:700 !important;
+}

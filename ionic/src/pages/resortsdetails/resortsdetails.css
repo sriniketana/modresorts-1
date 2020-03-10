@@ -1,0 +1,236 @@
+#page-resortsdetails .scroll-content {
+  margin-top: 0px;
+  overflow: hidden;
+}
+
+page-resortsdetails ion-header .toolbar-title{
+  display: none;
+}
+
+page-resortsdetails ion-navbar .toolbar-background {
+  border: none !important;
+}
+page-resortsdetails ion-navbar .button-inner, page-resortsdetails ion-header ion-icon {
+  color: #484848 !important;
+}
+
+page-resortsdetails .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+  display: none;
+}
+/* shapes styles */
+
+page-resortsdetails .toolbar-background {
+  background: transparent;
+}
+
+page-resortsdetails .scroll-content {
+  margin-top: 0 !important;
+  padding: 0 !important;
+}
+
+page-resortsdetails ion-title {
+  text-align: center;
+}
+
+page-resortsdetails .toolbar-title {
+  color: #ffffff;
+}
+#page-resortsdetails .content {
+  font-family: Lato;
+}
+#page-resortsdetails .content img {
+  width: 100%;
+  height: 30vh;
+}
+
+#page-resortsdetails .details-content {
+  padding: 3rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#page-resortsdetails .details-content .sub-heading{
+      margin: 0;
+  font-weight: 600;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color: #A1a6b1;
+}
+#page-resortsdetails .details-content .heading{
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #484848;
+  margin: 0;
+}
+#page-resortsdetails .details-content .description{
+  font-size: 1.5rem;
+  text-align: left;
+}
+#page-resortsdetails .content .content-container {
+  height: 60vh;
+  overflow: scroll;
+}
+#page-resortsdetails .content .extended-details{ 
+  padding: 2rem;
+}
+#page-resortsdetails .submit-btn-container{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 0px;
+  margin-left:0px;
+ 
+} 
+#page-resortsdetails .date-container{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 60px;
+  margin-left:0px;
+  background-color: #fff;
+  cursor:pointer;
+} 
+#page-resortsdetails .submit-btn-container button{
+  width: 100%;
+  background-image: linear-gradient(120deg, #FF9E7B, #E9446A);
+  font-weight: 600;
+  margin: 0;
+  min-height: 8vh;
+  
+} 
+
+#page-resortsdetails .content .extended-details .heading{
+   font-size: 2.0rem;
+  font-weight: 800;
+  color: #484848;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+#page-resortsdetails .content .extended-details .card{ 
+  text-align: left;
+  box-shadow: 1px 4px 10px 0px #A1a6b1;
+}
+/* web ui */
+
+.platform-core #page-resortsdetails .scroll-content {
+  padding: 0;
+}
+
+.platform-core page-resortsdetails .toolbar-title {
+  color: #424242;
+}
+
+.platform-core #page-resortsdetails .content {
+    display: flex;
+    height: 100%;
+}
+.platform-core #page-resortsdetails .content .web-left-content{
+    width: 40%;
+    height: 100%;
+    box-shadow: 1px 4px 10px 0px #A1a6b1;
+}
+.platform-core #page-resortsdetails .content .web-left-content img{
+    width: 100%;
+    height: 50vh;
+}
+.platform-core #page-resortsdetails .content .submit-btn-container {
+    padding-left: 1rem;
+    justify-content: flex-start;
+}
+.platform-core #page-resortsdetails .content .submit-btn-container button{
+    width: 11vw;
+    margin-bottom: 1rem;
+}
+.platform-core #page-resortsdetails .content .content-container {
+    padding-left: 4rem;
+    width: 60%;
+    height: 100%;
+}
+.platform-core #page-resortsdetails .content .details-content {
+    padding-top: 0;
+}
+.platform-core #page-resortsdetails .content .extended-details{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 100%;
+    overflow: hidden;
+}
+.platform-core #page-resortsdetails .content .extended-details .about-container {
+    padding: 2rem;
+}
+.platform-core #page-resortsdetails .content .extended-details .about-container .heading{
+    padding: 0;
+}
+.platform-core #page-resortsdetails .content .extended-details .heading{
+    margin-bottom: 3rem;
+}
+.platform-core #page-resortsdetails .content .extended-details ion-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 45vh;
+    overflow: scroll;
+}
+.platform-core #page-resortsdetails .content .extended-details ion-list ion-card{
+    flex: 0 44%;
+    text-align: left;
+    box-shadow: 1px 4px 10px 0px #A1a6b1;
+    width: 100%;
+    margin: 10px !important;
+}
+/* Animation */
+
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0, 40px, 0)
+  }
+  to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0, 40px, 0)
+  }
+  to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+
+/* left enter animation */
+
+.animateLeft {
+    -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  left: -50%;
+  position: relative;
+}
+.animateLeft.move {
+    left: 0;
+}

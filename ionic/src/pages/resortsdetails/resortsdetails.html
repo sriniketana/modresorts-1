@@ -1,0 +1,60 @@
+<link
+  href="https://fonts.googleapis.com/css?family=Lato:400,600,900&display=swap"
+  rel="stylesheet"
+/>
+<ion-header>
+  <ion-navbar>
+    <ion-title>Resortsdetails</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding text-center id="page-resortsdetails">
+  <div class="content animated fadeInUp">
+    <ion-row class="web-left-content">
+      <img src="{{itemDetails.img}}" />
+      <ion-row class="details-content" *ngIf="viewPlatform === 'web'">
+        <h4 class="sub-heading">{{itemDetails.subHeading}}</h4>
+        <h4 class="heading">{{itemDetails.heading}}</h4>
+        <p class="description">{{itemDetails.description}}</p>
+      </ion-row>
+    </ion-row>
+    <ion-row class="submit-btn-container" *ngIf="viewPlatform === 'web'">
+      <button ion-button (click)="handleButtonClick()">Book Now</button>
+    </ion-row>
+    <ion-row class="content-container">
+      <ion-row class="details-content" *ngIf="viewPlatform === 'mobile'">
+        <h4 class="sub-heading">{{itemDetails.subHeading}}</h4>
+        <h4 class="heading">{{itemDetails.heading}}</h4>
+        <p class="description">{{itemDetails.description}}</p>
+      </ion-row>
+      <ion-row class="extended-details">
+        <ion-row class="about-container" *ngIf="viewPlatform === 'web'">
+          <h4 class="heading">About</h4>
+          <p>{{itemDetails.briefDesc}}</p>
+        </ion-row>
+        <h4 class="heading">Reviews</h4>
+        <ion-list>
+          <ion-card *ngFor="let review of itemDetails.reviews">
+            <ion-card-header>
+              {{review.name}}
+            </ion-card-header>
+            <ion-card-content>
+              {{review.review}}
+            </ion-card-content>
+          </ion-card>
+        </ion-list>
+      </ion-row>
+    </ion-row>
+    <ion-row class="date-container">
+      <ion-label>Pick a date</ion-label>
+      <ion-datetime
+        displayFormat="MMM DD YYYY"
+        [(ngModel)]="bookingDate"
+      ></ion-datetime>
+    </ion-row>
+    <ion-row class="submit-btn-container">
+      <button ion-button (click)="handleButtonClick()">
+        Book Now
+      </button>
+    </ion-row>
+  </div>
+</ion-content>

@@ -1,0 +1,293 @@
+#page-resorts .scroll-content {
+  margin-top: 0px;
+  overflow: hidden;
+}
+
+
+page-resorts .toolbar-background {
+  background: transparent;
+  border: none !important;
+}
+
+page-resorts .scroll-content {
+  margin-top: 0 !important;
+  padding: 0 !important;
+  padding-top: 35% !important;
+}
+
+page-resorts ion-title {
+  text-align: center;
+}
+
+page-resorts .toolbar-title {
+  color: #ffffff;
+}
+/* shapes styles */
+
+#page-resorts .shape-one {
+  width: 69vw;
+  height: 40vh;
+  opacity: 0.9;
+  background-image: linear-gradient(#F6DC79, #FF9E7B);
+  border-radius: 50%;
+  position: fixed;
+  top: -25%;
+  left: -11%;
+  z-index: 1;
+}
+
+#page-resorts .shape-two {
+  width: 100vw;
+  height: 100vw;
+  background-image: linear-gradient(#F679A3, #E9446A);
+  border-radius: 50%;
+  position: fixed;
+  top: -28%;
+  left: 37%;
+}
+
+#page-resorts .shape-page-one {
+  display: none;
+}
+#page-resorts .shape-page-two {
+  display: none;
+}
+
+/* mobile content ui */
+  #page-resorts .content {
+      margin-top: 20vh;
+  }
+    #page-resorts .mobile-content {
+        width: 100%;
+        height: 100%;
+    }
+  #page-resorts .mobile-content .resorts-top-content {
+        width: 100%;
+  text-align: left;
+  padding-left: 4rem;
+  margin-bottom: 3rem;
+  z-index: 2;
+  }
+  #page-resorts .mobile-content .resorts-top-content h4 {
+font-size: 3rem;
+  font-family: Lato;
+  font-weight: 800;
+  color: #484848;
+  }
+  #page-resorts .mobile-content .resorts-top-content p {
+    font-size: 1.6rem;
+  color: #65676b;
+  font-weight: 700;
+  }
+  #page-resorts .mobile-content ion-slide {
+        justify-content: flex-start;
+  align-items: flex-start;
+  }
+      #page-resorts .mobile-content ion-slide {
+          width: 90%;
+      }
+      #page-resorts .mobile-content ion-slide .slide-zoom .slide-content{
+          margin: 2rem;
+          margin-right: 0;
+          display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+      }
+      #page-resorts .mobile-content ion-slide .slide-zoom .slide-content img{
+             border-radius: 10px;
+  box-shadow: 1px 4px 10px 0px #A1a6b1;
+  width: 80%;
+  height: 25vh;
+      }
+       #page-resorts .mobile-content .slide-text-content{
+           text-align: left;
+               padding: 1rem;
+               font-family: Lato;
+                   position: absolute;
+  top: 52%;
+  width: 80%;
+  left: 10%;
+  padding-top: 25%;
+  padding-bottom: 2rem;
+  box-shadow: 1px 4px 10px 0px #A1a6b1;
+  border-radius: 10px;
+       }
+       #page-resorts .mobile-content .slide-text-content .content-wrapper{
+           max-height: 20vh;
+  overflow: scroll;
+       }
+        #page-resorts .mobile-content .slide-text-content span{
+            font-size: 1.2rem;
+  color: #A1a6b1;
+  font-weight: 700;
+  text-transform: uppercase;
+        }
+        #page-resorts .mobile-content .slide-text-content h1{
+                font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+        }
+        #page-resorts .mobile-content .slide-text-content p{
+            -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.4rem;
+        }
+/* web ui */
+
+.platform-core #page-resorts .scroll-content {
+  padding: 0;
+padding-top: 7% !important;
+}
+
+.platform-core #page-resorts .shapes-container-vivid {
+  width: 50%;
+  display: block;
+  opacity: 0.2;
+}
+
+.platform-core #page-resorts .shapes-container-vivid .shape-one {
+     display: block;
+  width: 30vw;
+  height: 50vh;
+  top: -25%;
+  left: -10%;
+  transform: rotate(45deg);
+  background-image: linear-gradient(#F6DC79, #FF9E7B);
+  border-radius: 0;
+  position: absolute;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  z-index: 2;
+  opacity: 1;
+}
+
+.platform-core #page-resorts .shapes-container-vivid .shape-two {
+     display: block;
+  width: 60vw;
+  height: 80vh;
+  top: -50%;
+  left: -36%;
+  transform: rotate(35deg);
+  background-image: linear-gradient(#F679A3, #E9446A);
+  border-radius: 0;
+  position: absolute;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.platform-core #page-resorts .shapes-container-vivid .shape-page-one {
+    display: block;
+    width: 44vw;
+    height: 80vh;
+    top: 20%;
+    left: -10%;
+    transform: rotate(35deg);
+    background-image: linear-gradient(#F679A3, #E9446A);
+    border-radius: 0;
+    position: fixed;
+    border-radius: 50%;
+    opacity: 0.1;
+}
+
+.platform-core #page-resorts .shapes-container-vivid .shape-page-two {
+    display: block;
+    width: 64vw;
+    height: 120vh;
+    top: 20%;
+    right: -1%;
+    transform: rotate(35deg);
+    background-image: linear-gradient(#F6DC79, #FF9E7B);
+    border-radius: 0;
+    position: fixed;
+    border-radius: 50%;
+    opacity: 0.1;
+}
+
+.platform-core .resorts-top-content {
+    text-align: left;
+    padding-left: 4rem;
+}
+.platform-core .web-content {
+    width: 100%;
+    font-family: Lato;
+    z-index: 2;
+}
+.platform-core .web-content .resorts-top-content h4{
+    font-size: 3rem;
+    color: #484848;
+    font-weight: 800;
+}
+.platform-core .web-content .resorts-top-content p{
+    font-size: 1.6rem;
+    color: #65676b;
+    font-weight: 700;
+}
+.platform-core .web-content ion-list{
+    width: 100vw;
+    overflow: scroll;
+    display: flex;
+}
+.platform-core .web-content ion-list ion-card{
+    padding-top: 0;
+    margin-top: 1rem !important;
+    width: 22%;
+    padding-bottom: 2rem;
+    box-shadow: 1px 4px 10px 0px #A1a6b1;
+    border-radius: 10px;
+    text-align: left;
+    min-width: 21vw;
+}
+.platform-core .web-content ion-list ion-card ion-card-header span{
+    font-size: 1.2rem;
+    color: #A1a6b1;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.platform-core .web-content ion-list ion-card ion-card-header h4{
+        font-size: 1.7rem;
+    font-weight: 500;
+}
+.platform-core .web-content ion-list ion-card img{
+    height: 30vh;
+}
+.platform-core .web-content ion-list ion-card ion-card-content{
+        height: 15vh;
+    overflow: hidden;
+}
+.platform-core page-resorts .toolbar-title {
+  color: #424242;
+}
+
+
+/* responsive css */
+@media (max-height:600px) {
+    #page-resorts .resorts-top-content {
+        margin-bottom: 0rem;
+    }
+}
+
+@media (min-height:800px) and (max-height: 900px) {
+  page-resorts .scroll-content {
+      padding-top: 47% !important;
+  }   
+  #page-resorts ion-slide .slide-zoom .slide-content img{
+             border-radius: 10px;
+  box-shadow: 1px 4px 10px 0px #A1a6b1;
+  width: 80%;
+  height: 23vh;
+      }  
+}
+
+
+/* fade in animation */
+
+  /* #page-resorts .fade-in {
+        -webkit-animation: fadein 2s; 
+     -moz-animation: fadein 2s;
+      -ms-animation: fadein 2s; 
+       -o-animation: fadein 2s; 
+          animation: fadein 2s;
+  } */
+/* @keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+} */

@@ -1,0 +1,363 @@
+.content-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+page-chatbot .toolbar {
+    min-height: 12vh !important;
+}
+
+page-chatbot ion-navbar .toolbar-background {
+    background-image: linear-gradient(-240deg, #FF9E7B, #F679A3, #E9446A);
+    border: none !important;
+}
+
+page-chatbot .toolbar-title {
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    color: #e6e6e6;
+    text-align: center;
+}
+
+#page-chatbot .scroll-content {
+    margin-top: 12vh !important;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+}
+
+#page-chatbot .chat-container-jazz,
+#page-chatbot .chat-wrapper-jazz {
+    width: 100%;
+}
+
+#page-chatbot .chat-wrapper-jazz {
+    list-style: none;
+    overflow: scroll;
+    padding: 2.5rem;
+    padding-top: 0rem;
+    padding-bottom: 5rem;
+    height: 86vh;
+    font-family: Raleway;
+}
+
+#page-chatbot .chat-intro {
+    display: none;
+}
+
+#page-chatbot .chat-wrapper-jazz .support-msg-jazz {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    text-align: left;
+    float: left;
+    width: 70%;
+}
+
+#page-chatbot .chat-wrapper-jazz .support-msg-jazz .msg-content-container:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    transform: rotate(270deg);
+    left: 16%;
+    top: 80%;
+    right: auto;
+    bottom: auto;
+    border: 10px solid;
+    border-color: #f0f0f0 #f0f0f0 transparent transparent;
+}
+
+#page-chatbot .chat-wrapper-jazz .support-msg-jazz .msg-content-container {
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    background: #ececec;
+    color: #484848;
+    border-radius: 7px;
+    border-bottom-left-radius: 0px;
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
+    font-family: Raleway;
+    width: 80%;
+    margin-left: 16%;
+}
+
+#page-chatbot .chat-wrapper-jazz .support-msg-jazz .msg-content-container .msg-head {
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 900;
+}
+
+#page-chatbot .chat-wrapper-jazz .support-msg-jazz .msg-addons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 9vh;
+}
+
+#page-chatbot .chat-wrapper-jazz .support-msg-jazz .msg-addons img {
+    max-width: 100%;
+    border: 0;
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+}
+
+#page-chatbot .chat-wrapper-jazz .support-msg-jazz span {
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    position: absolute;
+    left: 77%;
+    top: 100%;
+}
+
+#page-chatbot .chat-wrapper-jazz .user-msg-jazz {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    float: right;
+    width: 70%;
+    align-items: flex-end;
+    margin-top: 10%;
+}
+
+#page-chatbot .chat-wrapper-jazz .user-msg-jazz .msg-content-container {
+    padding: 1.5rem;
+    background-image: linear-gradient(-120deg, #F679A3, #E9446A);
+    color: white;
+    border-radius: 7px;
+    border-bottom-right-radius: 0px;
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
+    font-family: Raleway;
+}
+
+#page-chatbot .chat-wrapper-jazz .user-msg-jazz .msg-content-container .msg-head {
+    margin: 0;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 900;
+}
+
+#page-chatbot .chat-wrapper-jazz .user-msg-jazz span {
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+}
+
+#page-chatbot .chat-wrapper-jazz .msg {
+    margin: 0;
+    font-weight: 600;
+}
+
+#page-chatbot .chat-container-jazz .chat-input-container {
+    bottom: 9rem;
+    width: 90%;
+    left: 5%;
+    border-radius: 30px;
+    padding: 0.5rem;
+    max-height: 12vh;
+    align-items: center;
+    display: flex;
+    min-height: 8vh;
+    justify-content: space-between;
+    /* border-top: 1px solid #598a9d; */
+    position: fixed;
+    /* width: 100%; */
+    background: #fff;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    box-shadow: 0px 0px 8px 3px #cecccc;
+}
+
+#page-chatbot .chat-container-jazz .chat-input-container textarea {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 80%;
+    color: #484848;
+    border: none;
+    padding: 1rem;
+    font-size: 1.6rem;
+    max-height: 10vh;
+}
+
+#page-chatbot .chat-container-jazz .chat-input-container button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0.7rem;
+    background: #fb8c8e4f;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+#page-chatbot .chat-container-jazz .chat-input-container button svg {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: #ec537a;
+}
+
+
+/* web ui */
+
+.platform-core #page-chatbot {
+    background: #fff;
+}
+
+.platform-core page-chatbot .wave-1 {
+    transform: skewY(-31deg);
+    top: -5%;
+}
+
+.platform-core page-chatbot .wave-2 {
+    top: 13%;
+    transform: skewY(130deg);
+}
+
+.platform-core #page-chatbot .chat-wrapper-jazz {
+    padding-bottom: 6rem;
+}
+
+.platform-core #page-chatbot .chat-container-jazz {
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+}
+
+.platform-core #page-chatbot .chat-intro {
+    width: 26%;
+    display: block;
+}
+
+.platform-core #page-chatbot .chat-intro img {
+    width: 50%;
+}
+
+.platform-core #page-chatbot .chat-intro .intro-text-container {
+    font-family: Raleway;
+}
+
+.platform-core #page-chatbot .chat-intro .intro-text-container h4 {
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #3e3e3e;
+}
+
+.platform-core #page-chatbot .chat-intro .intro-text-container p {
+    font-size: 1.5rem;
+    padding: 2rem;
+    color: #484848;
+}
+
+.platform-core #page-chatbot .chat-wrapper-jazz {
+    width: 50%;
+    height: 80vh;
+}
+
+.platform-core #page-chatbot .chat-container-jazz .chat-input-container {
+    border-radius: 10px;
+    border: none;
+    left: 44%;
+    bottom: 3vh;
+    width: 50%;
+    background: transparent;
+    box-shadow: none;
+}
+
+.platform-core #page-chatbot .chat-container-jazz .chat-input-container textarea {
+    width: 85%;
+    border-radius: 30px;
+    padding: 1.5rem;
+    background: #ececec;
+}
+
+.platform-core #page-chatbot .chat-container-jazz .chat-input-container button {
+    border-radius: 30px;
+    width: 53px;
+    height: 50px;
+    box-shadow: 0px 2px 3px -1px #6f293c;
+    background: #ee598099;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.platform-core #page-chatbot .chat-container-jazz .chat-input-container button:focus {
+    transform: scale(0.9);
+    transition: transform 0.2s ease-in;
+}
+
+.platform-core #page-chatbot .chat-wrapper-jazz .support-msg-jazz,
+.platform-core #page-chatbot .chat-wrapper-jazz .user-msg-jazz {
+    width: 55%;
+    margin-bottom: 1rem;
+    margin-top: 2%;
+}
+
+.platform-core #page-chatbot .chat-container-jazz .chat-input-container button svg {
+    fill: white;
+    width: 2rem;
+    height: 2rem;
+}
+
+.platform-core #page-chatbot .chat-wrapper-jazz .support-msg-jazz .msg-content-container {
+    background: #ececec;
+}
+
+.platform-core #page-chatbot .chat-wrapper-jazz .support-msg-jazz .msg-content-container::after {
+    border-color: #ececec #ececec transparent transparent;
+}
+
+.platform-core #page-chatbot .chat-wrapper-jazz .support-msg-jazz .msg-addons img {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* Animation */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
